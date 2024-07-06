@@ -113,7 +113,7 @@ def scanHost(host, ports, threads, verbosity, timeout):
     if (len(ports)>1):
         with ThreadPoolExecutor(threads) as executor:
             for port in range(ports[0], ports[1]+1):
-                executor.submit(scanPort, host, port, verbosity)
+                executor.submit(scanPort, host, port, verbosity, timeout)
     else:
         scanPort(host,ports[0],verbosity, timeout)
     
