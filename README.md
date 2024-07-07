@@ -1,6 +1,6 @@
-# Simple Port Scanner
+# bull3t
 
-Simple Port Scanner is a basic tool designed to scan ports on a specified host, identify open ports, and provide banner information. It is built using Python and leverages multithreading for efficient scanning.
+bull3t is a basic tool designed to scan ports on a specified host, identify open ports, and provide banner information. It is built using Python and leverages multithreading for efficient scanning.
 
 ## Features
 
@@ -27,7 +27,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/salman-ahm3d/bull3t.git
-cd simple-port-scanner
+cd bull3t
 ```
 
 Install the required packages:
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 Run the script using Python and provide the necessary arguments:
 
 ```bash
-python port_scanner.py <host> [port] [--threads THREADS] [--verbose] [-o OUTPUT] [-n TIMEOUT]
+python bull3t.py <host> [port] [--threads THREADS] [--verbose] [-o OUTPUT] [-n TIMEOUT]
 ```
 
 ### Command Line Arguments
@@ -55,7 +55,7 @@ python port_scanner.py <host> [port] [--threads THREADS] [--verbose] [-o OUTPUT]
 ### Example Usage
 
 ```bash
-python port_scanner.py example.com 1-1024 --threads 20 --verbose -o results.txt -n 0.5
+python bull3t.py example.com 1-1024 --threads 20 --verbose -o results.txt -n 0.5
 ```
 
 This command will scan ports `1-1024` on `example.com` using `20` threads, with verbose output enabled, save the results to `results.txt`, and set a timeout of `0.5` seconds for each connection attempt.
